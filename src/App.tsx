@@ -24,7 +24,7 @@ function App() {
             <p>网络ID: {walletData.chainId}</p>
           </div>
         ) : (
-          <p>请连接您的钱包</p>
+          <p className="connect-wallet-text">请连接您的钱包</p>
         )}
       </div>
     </div>
