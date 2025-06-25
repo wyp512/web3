@@ -12,7 +12,10 @@ function App() {
   return (
     <div className="hello-web3-app">
       <div className="app-header">
-        <h1 className="app-title">MetaMask 连接演示</h1>
+        <div className="title-container">
+          <h1 className="app-title">MetaMask 连接演示</h1>
+          <div className={`connection-status ${walletData ? 'connected' : 'disconnected'}`}></div>
+        </div>
         <WalletConnect onConnect={handleWalletConnect} />
       </div>
 

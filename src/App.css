@@ -156,3 +156,26 @@
   color: #000000;
   font-weight: 500;
 }
+
+.title-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.connection-status {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.connection-status.connected {
+  background-color: #10b981; /* 绿色 */
+  box-shadow: 0 0 5px #10b981;
+}
+
+.connection-status.disconnected {
+  background-color: #ef4444; /* 红色 */
+  box-shadow: 0 0 5px #ef4444;
+}
